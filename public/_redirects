@@ -1,0 +1,2 @@
+# Redirect /old-path to /new-path
+/old-path /new-path 301
