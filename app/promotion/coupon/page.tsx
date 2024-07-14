@@ -12,7 +12,7 @@ export default function Promotion() {
     return (
         <div className="h-screen">
             <div className="px-[10px] mt-[20px]">
-                <div className="text-[18px]">วิธีการใช้คูปอง</div>
+                <div className="text-[18px]">วิธีการใช้คูปอง </div>
                 <div className="mt-[20px]">
                     1. เข้าไปที่ line official ของร้าน Arthurcorn และคลิ๊กที่บัตรสะสมแต้ม
                 </div>
