@@ -8,7 +8,7 @@ import coupon6 from "../../../public/img/coupon6.jpg";
 import coupon7 from "../../../public/img/coupon7.jpg";
 import Menubar from "../../../app/components/menubar";
 
-export default function Promotion() {
+export default function Coupon() {
     return (
         <div className="h-screen">
             <div className="px-[10px] mt-[20px]">
