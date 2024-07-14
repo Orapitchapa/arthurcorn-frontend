@@ -1,11 +1,11 @@
 "use client";
-import coupon1 from "../../../public/img/coupon1.jpg";
-import coupon2 from "../../../public/img/coupon2.jpg";
-import coupon3 from "../../../public/img/coupon3.jpg";
-import coupon4 from "../../../public/img/coupon4.jpg";
-import coupon5 from "../../../public/img/coupon5.jpg";
-import coupon6 from "../../../public/img/coupon6.jpg";
-import coupon7 from "../../../public/img/coupon7.jpg";
+import coupon1 from "../../../public/img/coupon01.jpg";
+import coupon2 from "../../../public/img/coupon02.jpg";
+import coupon3 from "../../../public/img/coupon03.jpg";
+import coupon4 from "../../../public/img/coupon04.jpg";
+import coupon5 from "../../../public/img/coupon05.jpg";
+import coupon6 from "../../../public/img/coupon06.jpg";
+import coupon7 from "../../../public/img/coupon07.jpg";
 import Menubar from "../../../app/components/menubar";
 
 export default function Coupon() {
