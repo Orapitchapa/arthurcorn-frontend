@@ -12,7 +12,7 @@ export const metadata = {
     description: "Coffee By Arthurcorn",
     images: [
       {
-        url: "../public/img/logo.jpg",
+        url: "/img/logo.jpg", // URL ของรูปภาพในโฟลเดอร์ public
         width: 800,
         height: 600,
         alt: "Logo Arthurcorn",
