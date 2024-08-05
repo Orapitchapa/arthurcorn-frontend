@@ -10,9 +10,6 @@ export const metadata = {
   openGraph: {
     title: "ARTHURCORN",
     description: "Coffee By Arthurcorn",
-    images: [
-      "https://arthurcorn-coffee.netlify.app/img/logo.jpg", // URL ของรูปภาพ
-    ],
   },
 };
 
@@ -28,7 +25,7 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta property="og:description" content={metadata.openGraph.description} />
-        <meta property="og:image" content={metadata.openGraph.images[0]} />
+        <meta property="og:image" content="https://arthurcorn-coffee.netlify.app/img/logo.jpg" />
         <meta property="og:image:width" content="800" />
         <meta property="og:image:height" content="600" />
       </Head>
