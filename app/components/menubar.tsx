@@ -20,7 +20,7 @@ export default function Menubar() {
  return (
    <div className='fixed bottom-0 w-[100%]'>
      <div className='w-full h-[65px] grid grid-cols-3 text-[#FFFFFF]'>
-       <button className={`rows-2 ${currentURL === '/' ? 'bg-[#B4B4B8] text-[#8e826e]' : 'bg-[#DDDDDD] text-[#A0937D]'}`}>
+       <button className={`rows-2 ${currentURL === '/' ? 'bg-[#eceade] text-[#8e826e]' : 'bg-[#DDDDDD] text-[#A0937D]'}`}>
          <Link href="/">
            <div >
              <ReadOutlined style={{ fontSize: '24px' }} />
@@ -30,7 +30,7 @@ export default function Menubar() {
            </div>
          </Link>
        </button>
-       <button className={`rows-2 ${currentURL === '/account' ? 'bg-[#B4B4B8] text-[#8e826e]' : 'bg-[#DDDDDD] text-[#A0937D]'}`}>
+       <button className={`rows-2 ${currentURL === '/account' ? 'bg-[#eceade] text-[#8e826e]' : 'bg-[#DDDDDD] text-[#A0937D]'}`}>
          <Link href="/account">
            <div>
              <DollarOutlined style={{ fontSize: '24px' }} />
@@ -40,7 +40,7 @@ export default function Menubar() {
            </div>
          </Link>
        </button>
-       <button className={`rows-2 ${currentURL === ('/promotion') ? 'bg-[#B4B4B8] text-[#8e826e]' : 'bg-[#DDDDDD] text-[#A0937D]'}`}>
+       <button className={`rows-2 ${currentURL === ('/promotion') ? 'bg-[#eceade] text-[#8e826e]' : 'bg-[#DDDDDD] text-[#A0937D]'}`}>
          <Link href="/promotion">
            <div>
              <GiftOutlined style={{ fontSize: '24px' }} />
