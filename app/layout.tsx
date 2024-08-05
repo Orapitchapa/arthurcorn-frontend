@@ -12,7 +12,7 @@ export const metadata = {
     description: "Coffee By Arthurcorn",
     images: [
       {
-        url: "/img/logo.jpg", // URL ของรูปภาพในโฟลเดอร์ public
+        url: "https://arthurcorn-coffee.netlify.app/img/logo.jpg", // URL ของรูปภาพในโฟลเดอร์ public
         width: 800,
         height: 600,
         alt: "Logo Arthurcorn",
