@@ -1,15 +1,25 @@
-import Head from "next/head";
-import { Inter } from "next/font/google";
-import "./globals.css";
+// app/layout.tsx
+import Head from 'next/head';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "ARTHURCORN",
-  description: "Coffee By Arthurcorn",
+  title: 'ARTHURCORN',
+  description: 'Coffee By Arthurcorn',
   openGraph: {
-    title: "ARTHURCORN",
-    description: "Coffee By Arthurcorn",
+    title: 'ARTHURCORN',
+    description: 'Coffee By Arthurcorn',
+    image: 'https://arthurcorn-coffee.netlify.app/img/logo.jpg',
+    imageWidth: 800,
+    imageHeight: 600,
+  },
+  twitter: {
+    title: 'ARTHURCORN',
+    description: 'Coffee By Arthurcorn',
+    image: 'https://arthurcorn-coffee.netlify.app/img/logo.jpg',
+    imageAlt: 'Coffee By Arthurcorn',
   },
 };
 
@@ -25,9 +35,13 @@ export default function RootLayout({
         <meta name="description" content={metadata.description} />
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta property="og:description" content={metadata.openGraph.description} />
-        <meta property="og:image" content="https://arthurcorn-coffee.netlify.app/img/logo.jpg" />
-        <meta property="og:image:width" content="800" />
-        <meta property="og:image:height" content="600" />
+        <meta property="og:image" content={metadata.openGraph.image} />
+        <meta property="og:image:width" content={metadata.openGraph.imageWidth.toString()} />
+        <meta property="og:image:height" content={metadata.openGraph.imageHeight.toString()} />
+        <meta name="twitter:title" content={metadata.twitter.title} />
+        <meta name="twitter:description" content={metadata.twitter.description} />
+        <meta name="twitter:image" content={metadata.twitter.image} />
+        <meta name="twitter:image:alt" content={metadata.twitter.imageAlt} />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
