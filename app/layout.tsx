@@ -15,8 +15,6 @@ export const generateMetadata = (): Metadata => {
       images: [
         {
           url: 'https://arthurcorn-coffee.netlify.app/img/logo.jpg',
-          width: 800,
-          height: 600,
         },
       ], 
     },
