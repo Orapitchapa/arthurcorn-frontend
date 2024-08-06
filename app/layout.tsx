@@ -11,20 +11,20 @@ export const metadata = {
   openGraph: {
     title: 'ARTHURCORN',
     description: 'Coffee By Arthurcorn',
-    image: 'https://arthurcorn-coffee.netlify.app/img/logo.jpg',
+    image: 'https://picsum.photos/200',
     imageWidth: 800,
     imageHeight: 600,
   },
   twitter: {
     title: 'ARTHURCORN',
     description: 'Coffee By Arthurcorn',
-    image: 'https://arthurcorn-coffee.netlify.app/img/logo.jpg',
+    image: 'https://picsum.photos/200',
     imageAlt: 'Coffee By Arthurcorn',
   },
   line: {
     title: 'ARTHURCORN',
     description: 'Coffee By Arthurcorn',
-    image: 'https://arthurcorn-coffee.netlify.app/img/logo.jpg',
+    image: 'https://picsum.photos/200',
     imageWidth: 800,
     imageHeight: 600,
   }
