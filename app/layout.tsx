@@ -21,6 +21,13 @@ export const metadata = {
     image: 'https://arthurcorn-coffee.netlify.app/img/logo.jpg',
     imageAlt: 'Coffee By Arthurcorn',
   },
+  line: {
+    title: 'ARTHURCORN',
+    description: 'Coffee By Arthurcorn',
+    image: 'https://arthurcorn-coffee.netlify.app/img/logo.jpg',
+    imageWidth: 800,
+    imageHeight: 600,
+  }
 };
 
 export default function RootLayout({
@@ -42,6 +49,8 @@ export default function RootLayout({
         <meta name="twitter:description" content={metadata.twitter.description} />
         <meta name="twitter:image" content={metadata.twitter.image} />
         <meta name="twitter:image:alt" content={metadata.twitter.imageAlt} />
+        <meta property="al:web:url" content={metadata.line.image} />
+        <meta property="al:web:should_fallback" content="true" />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
