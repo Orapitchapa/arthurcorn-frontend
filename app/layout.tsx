@@ -12,8 +12,8 @@ export const metadata = {
     title: 'ARTHURCORN',
     description: 'Coffee By Arthurcorn',
     image: 'https://picsum.photos/200',
-    imageWidth: 800,
-    imageHeight: 600,
+    imageWidth: 300,
+    imageHeight: 200,
   },
   twitter: {
     title: 'ARTHURCORN',
@@ -25,8 +25,8 @@ export const metadata = {
     title: 'ARTHURCORN',
     description: 'Coffee By Arthurcorn',
     image: 'https://picsum.photos/200',
-    imageWidth: 800,
-    imageHeight: 600,
+    imageWidth: 300,
+    imageHeight: 200,
   }
 };
 
