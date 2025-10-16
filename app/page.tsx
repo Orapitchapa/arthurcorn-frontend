@@ -10,6 +10,9 @@ import menu7 from "../public/img/menu7.jpg";
 import menu8 from "../public/img/menu8.jpg";
 import menu9 from "../public/img/menu9.jpg";
 import menu10 from "../public/img/menu10.jpg";
+import menu11 from "../public/img/menu11.jpg";
+import menu12 from "../public/img/menu12.jpg";
+import menu13 from "../public/img/menu13.jpg";
 import Menubar from "../app/components/menubar";
 
 export default function Home() {
@@ -28,6 +31,9 @@ export default function Home() {
         <img src={menu8.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
         <img src={menu9.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
         <img src={menu10.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
+         <img src={menu11.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
+          <img src={menu12.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
+           <img src={menu13.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
       </div>
     </div>
     <div className="mb-[80px]"></div>
