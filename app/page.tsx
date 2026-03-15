@@ -18,27 +18,27 @@ import Menubar from "../app/components/menubar";
 export default function Home() {
   return (
     <div>
-    <div className="">
-      <div className="px-2 text-center">
-        <div className="mx-auto mt-[10px]">ARTHURCORN MENU</div>
-        <img src={menu1.src} alt="menu" className="mt-[2px] mb-[8px] shadow-lg rounded-lg"/>
-        <img src={menu2.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-        <img src={menu3.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-        <img src={menu4.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-        <img src={menu5.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-        <img src={menu6.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-        <img src={menu7.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-        <img src={menu8.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-        <img src={menu9.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-        <img src={menu10.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-         <img src={menu11.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-          <img src={menu12.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
-           <img src={menu13.src} alt="menu" className="my-[8px] shadow-lg rounded-lg"/>
+      <div className="">
+        <div className="px-2 text-center">
+          <div className="mx-auto mt-[10px]">ARTHURCORN MENU</div>
+          <img src={menu1.src} alt="menu" className="mt-[2px] mb-[8px] shadow-lg rounded-lg" />
+          <img src={menu2.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu3.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu4.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu5.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu6.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu7.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu8.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu9.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu10.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu11.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu12.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+          <img src={menu13.src} alt="menu" className="my-[8px] shadow-lg rounded-lg" />
+        </div>
       </div>
-    </div>
-    <div className="mb-[80px]"></div>
-    <div className="flex-grow"></div>
-    <Menubar />
+      <div className="mb-[80px]"></div>
+      <div className="flex-grow"></div>
+      <Menubar />
     </div>
   );
 }
