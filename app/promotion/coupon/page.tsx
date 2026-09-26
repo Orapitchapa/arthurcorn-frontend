@@ -1,64 +1,23 @@
-"use client";
-import coupon1 from "../../../public/img/coupon01.jpg";
-import coupon2 from "../../../public/img/coupon02.jpg";
-import coupon3 from "../../../public/img/coupon03.jpg";
-import coupon4 from "../../../public/img/coupon04.jpg";
-import coupon5 from "../../../public/img/coupon05.jpg";
-import coupon6 from "../../../public/img/coupon06.jpg";
-import coupon7 from "../../../public/img/coupon07.jpg";
-import Menubar from "../../../app/components/menubar";
+import Image from 'next/image';
+import Link from 'next/link';
+import Icon from '../../components/ui-icon';
+
+export const metadata = { title: 'วิธีใช้คูปอง' };
+const steps = [
+  'เข้า LINE Official ของร้าน Arthurcorn แล้วเลือกบัตรสะสมแต้ม',
+  'เลือก “ได้รับแล้ว”',
+  'เลือกคูปองที่ต้องการใช้',
+  'กด “ใช้ของรางวัลนี้”',
+  'กด “เปลี่ยนเป็นใช้งานแล้ว”',
+  'กด “ใช้ของรางวัล”',
+  'เมื่อสถานะเปลี่ยนเป็นใช้แล้ว แคปหน้าจอส่งให้ทางร้าน',
+];
 
 export default function Coupon() {
-    return (
-        <div className="h-screen">
-            <div className="px-[10px] mt-[20px]">
-                <div className="text-[18px]">วิธีการใช้คูปอง</div>
-                <div className="mt-[20px]">
-                    1. เข้าไปที่ line official ของร้าน Arthurcorn และคลิ๊กที่บัตรสะสมแต้ม
-                </div>
-                <div className="mt-[15px] w-[200px]">
-                    <img src={coupon1.src} alt="menu" className="rounded-lg" />
-                </div>
-                <div className="mt-[30px]">
-                    2. กดไปที่ ได้รับแล้ว
-                </div>
-                <div className="mt-[15px] w-[200px]">
-                    <img src={coupon2.src} alt="menu" className="rounded-lg" />
-                </div>
-                <div className="mt-[30px]">
-                    3. กดไปที่คูปองที่ต้องการใช้
-                </div>
-                <div className="mt-[15px] w-[200px]">
-                    <img src={coupon3.src} alt="menu" className="rounded-lg" />
-                </div>
-                <div className="mt-[30px]">
-                    4. กดไปที่ใช้ของรางวัลนี้
-                </div>
-                <div className="mt-[15px] w-[200px]">
-                    <img src={coupon4.src} alt="menu" className="rounded-lg" />
-                </div>
-                <div className="mt-[30px]">
-                    5. กดไปที่เปลี่ยนเป็นใช้งานแล้ว
-                </div>
-                <div className="mt-[15px] w-[200px]">
-                    <img src={coupon5.src} alt="menu" className="rounded-lg" />
-                </div>
-                <div className="mt-[30px]">
-                    6. กดไปที่ใช้ของรางวัล
-                </div>
-                <div className="mt-[15px] w-[200px]">
-                    <img src={coupon6.src} alt="menu" className="rounded-lg" />
-                </div>
-                <div className="mt-[30px]">
-                    7. เมื่อสถานะเปลี่ยนเป็นใช้แล้ว กรุณาแคปหน้าจอส่งให้ทางร้านนะคะ
-                </div>
-                <div className="mt-[15px] w-[200px]">
-                    <img src={coupon7.src} alt="menu" className="rounded-lg" />
-                </div>
-            </div>
-            <div className="pb-[80px]"></div>
-            <div className="flex-grow"></div>
-            <Menubar />
-        </div>
-    );
+  return <section className="inner-page">
+    <Link href="/promotion" className="back-link">← กลับไปโปรโมชั่น</Link>
+    <div className="page-heading"><p className="eyebrow">HOW TO REDEEM</p><h1>วิธีใช้คูปอง</h1><p>ใช้คูปองผ่านบัตรสะสมแต้มใน LINE ของร้าน</p></div>
+    <ol className="coupon-grid">{steps.map((step, i) => <li className="coupon-step" key={step}><div className="step-heading"><span className="step-number">{String(i + 1).padStart(2, '0')}</span><h2>{step}</h2></div><Image src={`/img/coupon0${i + 1}.jpg`} alt={`ขั้นตอนที่ ${i + 1}: ${step}`} width={540} height={1170} sizes="(max-width: 600px) 80vw, 260px"/></li>)}</ol>
+    <div className="coupon-finish"><Link href="/" className="button primary">กลับไปเลือกเมนู <Icon name="arrow"/></Link></div>
+  </section>;
 }

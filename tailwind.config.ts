@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-family)"],
+        serif: ["var(--font-family)"],
+        mono: ["var(--font-family)"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
